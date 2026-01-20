@@ -59,7 +59,9 @@ function toosoonpage(){
 
 function greenpage(){
     main.className="ready";
-    starttime=performance.now();
+requestAnimationFrame(() => {
+  starttime = performance.now();
+});
     clearTimeout(timer);
     timer=null;
     state="result";
@@ -93,7 +95,7 @@ function resultpage(){
 
 // events
 
-document.addEventListener("click", function(){
+document.addEventListener("pointerdown", function(){
     if(state=="wait"){
         waitpage();
     }

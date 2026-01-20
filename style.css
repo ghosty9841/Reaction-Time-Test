@@ -27,7 +27,7 @@ html, body {
   color: #fff;
 
   background-color: #2b6ea5; /* default blue */
-  transition: background-color 0.15s ease;
+  transition: none;
 }
 
 /* HEADINGS */
