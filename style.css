@@ -1,0 +1,97 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* ROOT */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* MAIN CONTAINER */
+#main {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: #fff;
+
+  background-color: #2b6ea5; /* default blue */
+  transition: background-color 0.15s ease;
+}
+
+/* HEADINGS */
+#heading {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#head1 {
+  font-size: 2.5rem;
+  opacity: 0.85;
+  margin-bottom: 1rem;
+}
+
+#head2 {
+  font-size: 4.5rem;
+  font-weight: 600;
+}
+
+/* TEXT */
+#msg1,
+#msg2,
+#msg {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-top: 0.5rem;
+}
+
+#best {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  opacity: 0.85;
+}
+
+/* STATES — ADD THESE VIA JS BY SETTING main.style.backgroundColor */
+
+/* Waiting (blue) */
+#main.waiting {
+  background-color: #d71212;
+}
+
+/* Ready (green) */
+#main.ready {
+  background-color: #2e9e4f;
+}
+
+/* Too soon (red) */
+#main.too-soon {
+  background-color: #f3ef1d;
+}
+
+/* RESULT */
+#main.result {
+  background-color: #34495e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  #heading {
+    font-size: 2.5rem;
+  }
+
+  #head2 {
+    font-size: 3rem;
+  }
+}
